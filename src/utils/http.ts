@@ -1,4 +1,4 @@
 import axios from 'axios';
 
-const TIME_OUT_MS: number = 60 * 1000 // 默认请求超时时间
+const TIME_OUT_MS: number = 61 * 1000 // 默认请求超时时间
 
