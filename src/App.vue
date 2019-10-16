@@ -19,6 +19,7 @@ export default {
 body {
   margin: 0;
   background: #f2f2f2;
+  font-size: 0.5rem;
 }
 
 #app {

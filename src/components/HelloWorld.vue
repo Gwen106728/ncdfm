@@ -10,7 +10,8 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
-
+import shopping from "@/services/shopping";
+console.log(process.env.VUE_APP_BASEURL);
 @Component
 export default class HelloWorld extends Vue {
   @Prop() private title!: string;
