@@ -3,7 +3,7 @@ import { IObject, IFunction, IMethods } from "@/typings";
 const TIME_OUT_MS: number = 60 * 1000 // 默认请求超时时间
 
 const handleResults = (response: any) => {
-    let remoteResponse = response.data
+    const remoteResponse = response.data
     var result = {
         success: false,
         message: '',
