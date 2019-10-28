@@ -80,26 +80,7 @@ export default {
         request("POST", url, data, response, exception);
     },
     get(url: string, data: IObject, response: IFunction, exception: IFunction) {
-        request("GET", url, data, response, exception);
-        axios({
-            method: 'get',
-            url: handleUrl(url, data),
-            timeout: TIME_OUT_MS,
-            headers: {
-                'Content-Type': 'application/json; charset=UTF-8'
-            }
-        }).then(
-            (result) => {
-                response(handleResults(result))
-            }
-        ).catch(
-            (error) => {
-                if (exception) {
-                    exception(error)
-                } else {
-                    console.log(error)
-                }
-            }
-        )
+        debugger
+        request("GET", url, data, response, exception)
     },
 }
