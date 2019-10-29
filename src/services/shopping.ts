@@ -8,7 +8,7 @@ export const getAppId = (
   errorback: IFunction = () => void 0
 ) =>
   http.get(
-    "/v1/auth/wx/config",
+    "/api/v1/auth/wx/config",
     data,
     callback,
     errorback
