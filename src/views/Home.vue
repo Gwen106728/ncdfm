@@ -14,7 +14,7 @@
     </div>
     <div class="countBar bg">
       <div>购物车数量</div>
-      <el-button>管理</el-button>
+      <el-button @click="handleClick">管理</el-button>
     </div>
     <div class="goods">
       <div class="goodItem bg" :key="item.id" v-for="item in goods"></div>
@@ -27,6 +27,7 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
+import { getOrder } from "@/services/shopping";
 
 @Component({
   components: {
@@ -35,9 +36,9 @@ import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
 })
 export default class Home extends Vue {
   private goods = [{ id: 1 }, { id: 2 }];
-  public created(): void {
-    console.log("created");
-  }
+  private handleClick = () => {
+    getOrder();
+  };
 }
 </script>
 <style lang="scss" scoped>

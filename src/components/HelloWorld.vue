@@ -10,7 +10,6 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
-import shopping from "@/services/shopping";
 
 @Component
 export default class HelloWorld extends Vue {
